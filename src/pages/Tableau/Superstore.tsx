@@ -27,7 +27,7 @@ const Superstore = () => {
   }, []);
 
   return (
-    <div className="w-full h-[85vh] p-4 bg-white rounded-sm border border-stroke shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="w-full h-full bg-white rounded-sm border border-stroke shadow-default dark:border-strokedark dark:bg-boxdark">
       {/* 2. Use the Modern Web Component */}
       {/* @ts-ignore */}
       <tableau-viz 
