@@ -11,7 +11,7 @@ import Avatars from "./pages/UiElements/Avatars";
 import Buttons from "./pages/UiElements/Buttons";
 import LineChart from "./pages/Charts/LineChart";
 import BarChart from "./pages/Charts/BarChart";
-import Calendar from "./pages/Calendar";
+//import Calendar from "./pages/Calendar";
 import Superstore from "./pages/Tableau/Superstore";
 import BasicTables from "./pages/Tables/BasicTables";
 import FormElements from "./pages/Forms/FormElements";
