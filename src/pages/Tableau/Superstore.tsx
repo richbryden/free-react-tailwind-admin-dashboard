@@ -7,28 +7,23 @@ const Superstore = () => {
     const divElement = vizRef.current;
     if (!divElement) return;
 
-    // Check if script already exists to prevent duplicate loading
-    const existingScript = document.getElementById('tableau-viz-script');
+    const url = "https://public.tableau.com/javascripts/api/viz_v1.js";
+    const existingScript = document.querySelector(`script[src="${url}"]`);
 
     if (!existingScript) {
       const scriptElement = document.createElement('script');
-      scriptElement.id = 'tableau-viz-script';
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      scriptElement.src = url;
       scriptElement.async = true;
       divElement.parentNode?.insertBefore(scriptElement, divElement);
-    } else {
-      // If script is already loaded, we might need to re-initialize viz logic
-      // This part is often handled automatically by the Tableau script watching for the class
     }
   }, []);
 
   return (
-    <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark p-4">
-      {/* Tableau Embed Container */}
+    <div className="h-screen w-full p-4 bg-white rounded-sm border border-stroke shadow-default dark:border-strokedark dark:bg-boxdark">
       <div 
         className='tableauPlaceholder' 
         id='viz1769981011138' 
-        style={{ position: 'relative', width: '100%', overflow: 'hidden' }} 
+        style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }} 
         ref={vizRef}
       >
         <noscript>
