@@ -36,8 +36,8 @@ const Superstore = () => {
         src="https://public.tableau.com/views/SuperstoreDashboard_16709573699130/SuperstoreDashboard"
         toolbar="bottom"
         hide-tabs
-        height="100%"
-        width="100%"
+        // FIX: Force the height here using inline styles
+        style={{ width: "100%", height: "85vh", display: "block" }}
       >
      {/* @ts-ignore */}
       </tableau-viz>
