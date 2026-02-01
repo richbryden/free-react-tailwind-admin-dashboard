@@ -33,8 +33,8 @@ const navItems: NavItem[] = [
   },
   {
     icon: <CalenderIcon />,
-    name: "Tableau Dashboard 1",
-    path: "https://public.tableau.com/app/profile/p.padham/viz/SuperstoreDashboard_16709573699130/SuperstoreDashboard",
+    name: "Superstore",
+    path: "/superstore",
   },
   {
     icon: <UserCircleIcon />,
