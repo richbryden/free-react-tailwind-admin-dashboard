@@ -33,7 +33,7 @@ const navItems: NavItem[] = [
   },
   {
     icon: <CalenderIcon />,
-    name: "Calendar",
+    name: "Tableau Dashboard 1",
     path: "/calendar",
   },
   {
