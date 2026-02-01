@@ -27,22 +27,24 @@ const Superstore = () => {
   }, []);
 
   return (
-    <div className="w-full h-full bg-white rounded-sm border border-stroke shadow-default dark:border-strokedark dark:bg-boxdark">
-      {/* 2. Use the Modern Web Component */}
-      {/* @ts-ignore */}
-      <tableau-viz 
-        ref={vizRef}
-        id="tableauViz"
-        src="https://public.tableau.com/views/SuperstoreDashboard_16709573699130/SuperstoreDashboard"
-        toolbar="bottom"
-        hide-tabs
-        // FIX: Force the height here using inline styles
-        style={{ width: "100%", height: "100%", display: "block" }}
-      >
-     {/* @ts-ignore */}
-      </tableau-viz>
-    </div>
-  );
+  <div className="w-full min-h-screen bg-white rounded-sm border border-stroke shadow-default dark:border-strokedark dark:bg-boxdark">
+    {/* 2. Use the Modern Web Component */}
+    {/* @ts-ignore */}
+    <tableau-viz 
+      ref={vizRef}
+      id="tableauViz"
+      src="https://public.tableau.com/views/SuperstoreDashboard_16709573699130/SuperstoreDashboard"
+      toolbar="bottom"
+      hide-tabs
+      // CHANGE: Use vh (viewport height) instead of %
+      style={{ width: "100%", height: "95vh", display: "block" }}
+    >
+    {/* @ts-ignore */}
+    </tableau-viz>
+  </div>
+);
+
+
 };
 
 export default Superstore;
