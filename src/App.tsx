@@ -32,7 +32,7 @@ export default function App() {
 
             {/* Others Page */}
             <Route path="/profile" element={<UserProfiles />} />
-            <Route path="/superstore" element={<Superstore />} />
+            <Route path="/Tableau/Superstore" element={<Superstore />} />
             <Route path="/blank" element={<Blank />} />
 
             {/* Forms */}
