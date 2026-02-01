@@ -34,7 +34,7 @@ const navItems: NavItem[] = [
   {
     icon: <CalenderIcon />,
     name: "Superstore",
-    path: "/superstore",
+    path: "/Tableau/Superstore",
   },
   {
     icon: <UserCircleIcon />,
