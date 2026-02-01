@@ -39,6 +39,7 @@ const Superstore = () => {
         height="100%"
         width="100%"
       >
+     {/* @ts-ignore */}
       </tableau-viz>
     </div>
   );
